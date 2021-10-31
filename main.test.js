@@ -323,7 +323,7 @@ describe('isValidPassword', () => {
   })
 });
 
-describe('onlyPunchy', () => {
+describe.only('onlyPunchy', () => {
   it(`returns only those titles that are shorter than 15 characters`, () => {
     expect(onlyPunchy(['quarantine!', 'the lord of the rings', 'the matrix!'])).toEqual(['quarantine!', 'the matrix!'])
   })
